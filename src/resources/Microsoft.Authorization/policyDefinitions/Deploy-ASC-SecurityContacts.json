@@ -83,6 +83,10 @@
               {
                 "field": "Microsoft.Security/securityContacts/notificationsSources[*].Alert.minimalSeverity",
                 "contains": "[[parameters('minimalSeverity')]"
+              },
+              {
+                "field": "Microsoft.Security/securityContacts/notificationsByRole.roles[*]",
+                "contains": "Owner"
               }
             ]
           },
